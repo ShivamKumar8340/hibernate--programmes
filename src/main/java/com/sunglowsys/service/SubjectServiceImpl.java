@@ -18,17 +18,24 @@ public class SubjectServiceImpl implements SubjectService{
 
     @Override
     public void update(Subject subject, Long id) {
+        subjectRepository.update(subject,id);
+
+
 
     }
 
     @Override
     public List<Subject> findAll() {
-        return null;
+        List<Subject> subjects=subjectRepository.findAll();
+
+        return subjects;
     }
 
     @Override
     public Subject findById(Long id) {
-        return null;
+        Subject subject=subjectRepository.findById(id);
+
+        return subject;
     }
 
     @Override

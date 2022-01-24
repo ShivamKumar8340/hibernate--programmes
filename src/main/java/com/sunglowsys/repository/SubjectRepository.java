@@ -9,7 +9,7 @@ public interface SubjectRepository  {
     void update(Subject subject, Long id);
 
     List<Subject> findAll();
-    Subject findById();
+    Subject findById(Long id);
      void delete(Long id);
 
 

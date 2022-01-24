@@ -9,7 +9,10 @@ public interface StudentService {
     void update (Student student,Long id);
 
     List<Student> findAll();
-    Student findByAll(Long id);
+
+
+    Student findById(Long id);
+
     void delete(Long id);
 
 
